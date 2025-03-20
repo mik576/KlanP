@@ -1,0 +1,285 @@
+﻿/* ====== Reset CSS ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+
+}
+
+/* ====== Header ====== */
+header {
+    background: #fff;
+
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* HEADER */
+.header1 {
+    background-color: #C4F352; /* Xanh chuối */
+    color: #355E00; /* Xanh lá đậm */
+    padding: 1px 149px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    gap: 20px;
+}
+
+    /* Định dạng text */
+    .header1 a {
+        text-decoration: none;
+        color: #355E00;
+        font-weight: bold;
+    }
+
+        .header1 a:hover {
+            text-decoration: underline;
+        }
+
+    /* Dropdown ngôn ngữ */
+    .header1 select {
+        padding: 1px;
+        border-radius: 5px;
+        border: 1px solid #355E00;
+        background-color: white;
+        color: #355E00;
+        font-weight: bold;
+    }
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+    .logo img {
+        width: 153px;
+        margin-right: 10px;
+    }
+
+    .logo span {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+.highlight {
+    color: #0099ff;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #3a6e00;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+            nav ul li a:hover {
+                color: #7FFF00;
+            }
+
+/* ====== Banner ====== */
+
+
+/* General Footer Styling */
+/* General Footer Styling */
+.footer {
+    background: #fff;
+    color: #fff; /* Màu chữ trắng */
+    padding: 40px 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Footer Top */
+.footer-top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #444; /* Đường kẻ ngăn cách */
+    padding-bottom: 20px;
+}
+
+/* Footer Columns */
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+
+    /* Thêm gạch dọc (border-right) cho các cột */
+    .footer-column:not(:last-child) {
+        border-right: 1px solid #212529; /* Đường kẻ dọc cho các cột, không áp dụng cho cột cuối */
+    }
+
+    .footer-column h4 {
+        font-size: 16px;
+        margin-bottom: 12px;
+        font-weight: bold;
+        color: #198754; /* Màu xanh lá */
+    }
+
+    .footer-column p {
+        font-size: 14px;
+        color: #212529;
+        line-height: 1.6;
+        word-break: break-word;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-column ul li {
+            margin-bottom: 8px;
+        }
+
+            .footer-column ul li a {
+                text-decoration: none;
+                color: #212529;
+                transition: color 0.3s;
+            }
+
+                .footer-column ul li a:hover {
+                    color: #7FFF00;
+                }
+
+/* Footer Bottom */
+.footer-bottom {
+    width: 100%;
+    text-align: center; /* Căn giữa nội dung */
+    margin-top: 30px;
+    padding-top: 15px;
+    color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+        /* Loại bỏ gạch dọc ở màn hình nhỏ */
+        .footer-column:not(:last-child) {
+            border-right: none;
+        }
+}
+
+
+/* Banner Styles */
+.banner2 {
+    background: #3a6e00; /* Gradient màu xanh */
+    color: #fff; /* Chữ màu trắng */
+    padding: 2px 0;
+    text-align: left;
+    position: relative;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Tiêu đề chính */
+.banner2 h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    color: #ffc107;
+}
+
+/* Đường dẫn Breadcrumb */
+/* Định dạng đường dẫn Breadcrumb */
+.breadcrumb {
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: 1px; /* Tăng khoảng cách giữa các ký tự */
+}
+
+    /* Breadcrumb Links */
+    .breadcrumb a {
+        color: #f1b500;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-weight: 500;
+        position: relative;
+        padding: 0 10px; /* Tạo khoảng cách hai bên */
+    }
+
+        /* Thêm dấu gạch ngang giữa các mục */
+        .breadcrumb a:not(:last-child)::after {
+            content: "/"; /* Dấu gạch ngang */
+            position: absolute;
+            right: -2px; /* Điều chỉnh vị trí */
+            color: #f0f0f0; /* Màu giống chữ */
+            font-weight: bold;
+        }
+
+        /* Hiệu ứng hover */
+        .breadcrumb a:hover {
+            color: black; /* Chuyển sang màu vàng khi hover */
+        }
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

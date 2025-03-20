@@ -1,0 +1,96 @@
+﻿/* Cam kết và Thanh toán */
+.commitment-payment {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #C4F352; /* Nền xanh chuối */
+    border-bottom: 3px solid #A5D600;
+}
+
+    .commitment-payment div {
+        width: 45%;
+        text-align: center;
+    }
+
+    .commitment-payment h3 {
+        color: #355E00; /* Xanh lá đậm */
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .commitment-payment p {
+        color: #3A6900;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+/* Bảng giá */
+/* Bảng giá */
+.pricing-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+    /* Căn giữa tiêu đề bảng */
+    .pricing-table th {
+        background-color: #A5D600; /* Xanh chuối đậm */
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 12px;
+        text-align: center; /* Căn giữa chữ */
+        vertical-align: middle; /* Căn giữa theo chiều dọc */
+    }
+
+    /* Căn giữa nội dung bảng */
+    .pricing-table td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+/* Màu chữ giá */
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #355E00; /* Xanh lá đậm */
+}
+
+/* Nút mua */
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #A5D600; /* Xanh chuối */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+    .buy-button:hover {
+        background-color: #8AB200; /* Xanh chuối đậm hơn */
+    }
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .commitment-payment {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+        .commitment-payment div {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+    .pricing-table {
+        width: 100%;
+        font-size: 14px;
+    }
+}

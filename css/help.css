@@ -1,0 +1,191 @@
+﻿/* 🌿 Căn chỉnh tổng thể */
+.help {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    gap: 30px;
+}
+
+/* 🎨 Sidebar (Danh mục) */
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background: #F3FBEF; /* Nền nhạt để tôn lên màu xanh chuối */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+    .sidebar h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: #5A8500;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .sidebar ul li {
+            margin-bottom: 12px;
+        }
+
+            .sidebar ul li a {
+                text-decoration: none;
+                color: #A7D129;
+                font-weight: 500;
+                transition: all 0.3s ease-in-out;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 10px;
+                border-radius: 6px;
+                transition: transform 0.2s ease-in-out;
+            }
+
+                .sidebar ul li a i {
+                    font-size: 18px;
+                    transition: transform 0.3s ease-in-out;
+                    color: #A7D129;
+                }
+
+                .sidebar ul li a:hover {
+                    color: white;
+                    background: #A7D129;
+                    transform: scale(1.05);
+                }
+
+                    .sidebar ul li a:hover i {
+                        transform: translateX(5px);
+                        color: white;
+                    }
+
+/* 🔥 Hộp trợ giúp */
+.support, .other-support {
+    background-color: #C4F352;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .support:hover, .other-support:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .support h3, .other-support h3 {
+        color: #355E00;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .support a, .other-support a {
+        color: #355E00;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+        .support a:hover, .other-support a:hover {
+            color: #2A4D00;
+        }
+
+/* 📌 Phần FAQ */
+.faq-section {
+    flex: 2;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề danh mục */
+#faq-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5A8500;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #A7D129;
+    padding-bottom: 5px;
+}
+
+/* 🎭 Câu hỏi */
+.faq-item {
+    background: #E8F6C9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #A7D129;
+}
+
+    .faq-item:hover {
+        background: #D4EC9A;
+        transform: scale(1.02);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+/* Câu hỏi */
+.question {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5A8500;
+}
+
+/* 🌀 Câu trả lời */
+.answer {
+    display: none;
+    font-size: 16px;
+    padding-top: 10px;
+    color: #555;
+    border-top: 1px solid #A7D129;
+    margin-top: 10px;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Mở rộng câu trả lời */
+.faq-item.active .answer {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* 🏮 Hiệu ứng mượt */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🎯 Responsive */
+@media (max-width: 768px) {
+    .help {
+        flex-direction: column;
+    }
+
+    .sidebar, .faq-section {
+        width: 100%;
+    }
+
+    .faq-item {
+        padding: 12px;
+    }
+
+    .question {
+        font-size: 16px;
+    }
+
+    .answer {
+        font-size: 14px;
+    }
+}
